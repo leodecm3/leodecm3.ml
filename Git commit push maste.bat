@@ -62,7 +62,7 @@ git add .
 git commit -am %comment%
 
 ::manda para o alem
-git push origin master
+git push origin master --force
 
 ::abre
 start open_GitHub_of_this_repository.lnk

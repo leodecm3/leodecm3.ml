@@ -1,0 +1,25 @@
+{
+  "name": "lmnama",
+  "version": "1.0.0",
+  "description": "descri.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "keywords": [
+    "pwa564321",
+    "prertergressive",
+    "weterteb",
+    "aprterp",
+    "cotertmplete",
+    "tutertertorial"
+  ],
+  "author": "Mretrterteer",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "firebase": "^4.12.1"
+  }
+}

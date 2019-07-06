@@ -1,0 +1,3 @@
+pause
+npm install
+pause

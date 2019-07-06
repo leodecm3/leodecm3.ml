@@ -1,0 +1,131 @@
+
+
+--nas aulas ele usaou um npm, para baixar as aulas, abre a pasta e roda
+npm install
+
+--e depois cria um servidor
+npm start
+
+--isso vai iniciar o "http-server": "^0.10.0" que esta escrito nas dependencias
+
+
+--ele falou para nao esquecer de marcar Disable Cache na aba network do chrome inspect
+marcar Disable Cache no chrome inspect
+
+
+
+
+--> s2a14
+--todas as paginas dentro do head tem que ter o manifest,        
+<link rel="manifest" href="/manifest.json">
+--> s2a15
+--no manifest voce pode colocar um scope diferente para forcar a pessoa a salvar o app
+--> s2a16
+--no manifesto, em display pode colocar algumas coisas
+standalone --mais comum (fullscream com barra de fechar e etc)
+fullscrean --toda a tela
+minimal-ui --tipo standalone, mas com menos coisa
+browser --roda em um browser
+--> s2a19
+--para testar no simulador do android, ao invez de ir em loocal:8080 no simulador do android, vai em 10.0.2.2:8080
+--> s2a22 
+--no apple safari tem que colocar ao invez de metatag, colocar em <meta>
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWAGram">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-60x60.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="/src/images/icons/apple-icon-180x180.png" sizes="180x180">
+  <meta name="msapplication-TileImage" content="/src/images/icons/app-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#3f51b5">
+</head>
+--> s3a31
+--dentro de menifest.json modifica o start para ele nao grardar o cache
+--de --  "start": "http-server"     --para --    "start": "http-server -c-1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--> comandos javascript ----------------------------------------------------------------------------------------
+
+--essa meeeerda 
+(function varGlobalFalse() {
+    minhaVariavelGlobal = false;
+})();
+
+--eh a mesma coisa que essa
+function varGlobalFalse() {
+    minhaVariavelGlobal = false;
+};
+varGlobalFalse();
+
+-- ou seja:
+-- ( ..funcao.. ) () ;    eh a mesma cois aque    funcao {.bla.} ();   --proxima linha--  funcao();
+
+
+--extra, com o => vc nao precisa colocar nome na funcao
+
+(async () => {
+..
+});
+--eh o mesmo que
+async function nomeDaFuncao() {
+  ..
+};
+nomeDaFuncao();
+
+
+
+
+
+
+
+
+--> para incliuir frase do html
+
+--no html
+<p class="hints"></p>
+
+--e no javascript
+var hints = document.querySelector('.hints');
+hints.innerHTML = 'bla bla bla...'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
