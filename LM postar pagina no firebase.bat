@@ -20,7 +20,8 @@ if "%op%"=="1" goto rodalocalmente
 echo you picked publica
 echo on
 start chrome https://meusitelm-cbb2f.firebaseapp.com/
-firebase deploy
+start firebase deploy
+echo  1
 pause
 exit
 
