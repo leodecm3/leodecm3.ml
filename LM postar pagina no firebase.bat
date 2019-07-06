@@ -18,19 +18,12 @@ if "%op%"=="1" goto rodalocalmente
 
 
 echo you picked publica
-
 echo on
-:: ADD ALL git
 git add .
-::commit git
-git commit -am "humm"
-::manda para o alem
+git commit -am "hum" 
 git push origin master
-
 start chrome https://meusitelm-cbb2f.firebaseapp.com/
 start firebase deploy
-start "Git commit push maste.bat"
-echo  1
 pause
 exit
 
