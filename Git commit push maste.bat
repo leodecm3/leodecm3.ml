@@ -43,11 +43,11 @@ EXIT
 ECHO ON
 
 ::crio a pasta para publicar
-mkdir .\docs
+::mkdir .\docs
 
 ::copio usando 2 metodos, pq as vezes o xcopy nao copia arquivo aberto
-xcopy ".\build" ".\docs" /e /y
-Robocopy ".\build" ".\docs" /MIR /PURGE
+::xcopy ".\build" ".\docs" /e /y
+::Robocopy ".\build" ".\docs" /MIR /PURGE
 
 Set defaultComment=%_yyyy% %_mm% %_dd% %_hour% %_minute% %_second%
 
@@ -62,7 +62,7 @@ git add .
 git commit -am %comment%
 
 ::manda para o alem
-git push origin master --force
+git push origin master
 
 ::abre
 start open_GitHub_of_this_repository.lnk
