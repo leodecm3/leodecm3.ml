@@ -1,4 +1,4 @@
-call code .
+code .
 
 exit
 
